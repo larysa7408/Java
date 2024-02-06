@@ -10,47 +10,26 @@ package homework_15;
 
  */
 public class Person {
-    String name = ("Валера");
-    int age=18;
-    String profession=("Инженер");
+    String name;
+    int age;
+    String profession;
 
-    public void PersonDoctor (){
-        String name1=("Максим");
-        int age2=35;
-        String profession1=("Стоматолог");
-
-        System.out.println("Привет! Меня зовут "+ name1);
-        System.out.println("Мне "+ age2+ " лет");
-        System.out.println("По профессии " + profession1);
-
+    public Person(String name, int age, String profession) {
+        this.name = name;
+        this.age = age;
+        this.profession = profession;
     }
-
-    public void PersonTeacher(){
-        String name2=("Олег");
-        int age2=32;
-        String profession2=("Учитель начальных классов");
-
-        System.out.println("Привет! Меня зовут "+ name2);
-        System.out.println("Мне "+ age2 + " лет");
-        System.out.println("По профессии " + profession2);
-
-
-
-    }
-
-
     void everyday() {
         System.out.println("Я каждый день посещаю лекции");
     }
+
     void everyday1() {
         System.out.println("Я принимаю пациентов ");
-
     }
+
     void everyday2() {
         System.out.println("Я провожу уроки детям в школе");
     }
-
-
 
 
 }
