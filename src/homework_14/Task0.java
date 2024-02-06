@@ -8,6 +8,12 @@ toUpperCase() использовать низзя.
  */
 
 public class Task0 {
+    public static void main(String[] args) {
+        String input = "java developer!";
+        String result = convertToUpperCase(input);
+        System.out.println(result);
+    }
+
     public static String convertToUpperCase(String input) {
         char[] charArray = input.toCharArray();
 
@@ -22,10 +28,11 @@ public class Task0 {
 
     }
 
-    public static void main(String[] args) {
-        String input = "java developer!";
-        String result = convertToUpperCase(input);
-        System.out.println(result);
-    }
+
+
+
+
+
+
 
 }
