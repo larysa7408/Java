@@ -1,6 +1,6 @@
 package lesson_15;
 
-public class CetsMain {
+public class CatsMain {
     public static void main(String[] args) {
         Cat cat = new Cat();//создаем обьект класса КОТ
         //Cat() вызов конструкторв класса специальный метод кот автоматич при создании метода иництализировать пол в классе
