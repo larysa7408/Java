@@ -33,12 +33,12 @@ public class Dog {
     }
 
     public static void main(String[] args) {
-        Dog charlie = new Dog("Foma", 3);
+        Dog Foma = new Dog("Foma", 3);
 
         double[] obstacles = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         for (int i = 0; i < obstacles.length; i++) {
             System.out.println("Барьер" + (i + 1) + " высотой " + obstacles[i] + "m");
-            charlie.jump(obstacles[i]);
+            Foma.jump(obstacles[i]);
             System.out.println();
 
         }
