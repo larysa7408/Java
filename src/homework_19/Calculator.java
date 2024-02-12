@@ -11,8 +11,8 @@ package homework_19;
 
 
 public class Calculator {
-    int var1;
-    int var2;
+    double var1;
+    double var2;
     public static double addition(double var1, double var2){
         return var1 + var2;
     }public static double subtraction(double var1, double var2){
