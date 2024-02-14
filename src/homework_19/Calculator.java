@@ -11,8 +11,7 @@ package homework_19;
 
 
 public class Calculator {
-    double var1;
-    double var2;
+
     public static double addition(double var1, double var2){
         return var1 + var2;
     }public static double subtraction(double var1, double var2){
@@ -22,7 +21,10 @@ public class Calculator {
     }public static double division(double var1, double var2){
         return var1 / var2;
     }
-
+   public static double divide(double var1, double var2){
+        if (var1==0)return Integer.MIN_VALUE;
+        return var1/var2;
+   }
 
 
 
