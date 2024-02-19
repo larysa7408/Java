@@ -5,8 +5,10 @@ public class AvtoParkMain {
 
 
         BusDriver busDriver = new BusDriver("LN-19549459");
+        //Cоздаем водителя автобуса
         Autobus bus = new Autobus(busDriver, 25);
-        System.out.println(bus.toString());
+        // создаем автобус
+        System.out.println(bus.toString());// инфо о нашем автобусе
         BusDriver busDriver1 = new BusDriver("AE-545434435");
         bus.setDriver(busDriver1);
         System.out.println(bus.toString());

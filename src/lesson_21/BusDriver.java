@@ -2,7 +2,8 @@ package lesson_21;
 
 public class BusDriver {
     private String licenseNumber;
-    private Autobus autobus;
+    private Autobus autobus;// в классе BusDriver появлятеся автобус состояие которого можно высчитывать как автобусом теперь управлять
+    // организация двунаправленной связи
 
     public String getLicenseNumber() {
         return licenseNumber;

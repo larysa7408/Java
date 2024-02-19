@@ -1,18 +1,37 @@
 package lesson_21;
-// Для создания в Джава HAS-A - Ассоциации (связи) определяем поле в классе которое будет хранить
-//ссылку на обьект другого класса
+
 public class Autobus {
+    // Для создания в Джава HAS-A - Ассоциации (связи) определяем поле в классе которое будет хранить
+    //Которое будет хранить ссылку на обьект другого класса
+    // Направленность связи -  однонаправленная или двунаправленная связь
+
+    //Кардинальность связи определяет сколько обьектов одного класса может быть ассоциирована с обьектом другого класса
+    /*
+     Существует 3 разновидности связи
+
+    -Один к одному Автобус и двигатель Каждый автобус может иметь только один автобус
+    и на каждый двигатель только один автобус
+
+   - Один ко многим Автобус и пассажиры Один автобус может перевозить много пассажиров
+    У автобуса будет массив пассажиров
+
+    -Многие ко многим Список автобусов и список остановок
+    Каждый автобус может останавливаться на множество остановок
+    Каждая остановка может обслуживать множество автобусов
+     */
 
     private BusDriver driver;// агрегация( мягкая связь)
     private final  Autopilot autopilot;// композиция ( жесткая неразрывная связь)
     //final обозначает что ссылка один раз присваевается
-    private int capacity;
+    private int capacity;// вместимость нашего автобуса
+
     private final Passenger[] passengers; //
     private int countPassenger;
 
     public Autobus(BusDriver busDriver, int capacity) { // конструктор который будет принимать busDriver
         this.driver = busDriver;
         busDriver.setAutobus(this);
+        //this мы находимся внутри автобуса ссылка на конкретный вид автобуса
         autopilot = new Autopilot("AP-005");//при создании автомобиля создаем автопилот
         this.capacity = capacity;
         this.passengers = new Passenger[capacity];
@@ -52,6 +71,10 @@ public class Autobus {
 
     public String toString() {// строка о состоянии нашего автобуса
         //TODO
+        StringBuilder stringBuilder=new StringBuilder("Autyobus: {driver: ");
+        stringBuilder.append(driver.getLicenseNumber()).append("; autopilot: ")
+                .append(autopilot.getSoftwareVersion()).append(" }");
+       // stringBuilder.append(createStringByPassengerList());stringBuilder.append("")
         return "Autobus: {" + " driver: " + driver.getLicenseNumber() + "; autopilot: " + autopilot.getSoftwareVersion() + "}";
 
     }
