@@ -14,25 +14,29 @@ public class Cat {
         this.name = name;
         this.energy = energy;
     }
-void eat(){
-    System.out.println("Я ем вкусный паштет");
-    energy++;
 
-}
-void walk(){
-    System.out.println("Я хожу");
-    energy --;
-}
-void run(){
-        while (energy<70){
+    void eat() {
+        System.out.println("Я ем вкусный паштет");
+        energy++;
+
+    }
+
+    void walk() {
+        System.out.println("Я хожу");
+        energy--;
+    }
+
+    void run() {
+        while (energy < 70) {
             System.out.println("У меня нет энергии бежать");
             System.out.println(" Моя энергия: " + energy + "Меня нужно покормить");
             eat();
         }
-    System.out.println("Я бегу");
-    energy-=50;
-}
-String getName (){
+        System.out.println("Я бегу");
+        energy -= 50;
+    }
+
+    String getName() {
         return "Я кошечка : " + name + " моя энергия: " + energy;
-}
+    }
 }
