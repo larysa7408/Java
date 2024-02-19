@@ -1,8 +1,8 @@
 package homework_15;
 
 public class Car {
-    private boolean startEngine;
-    private double refuel;
+    public boolean startEngine;
+    public double refuel;
 
     public Car() {
         startEngine = false;
