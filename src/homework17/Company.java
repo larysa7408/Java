@@ -22,8 +22,6 @@ public class Company {
                 System.out.println("Salary: " + employee.getSalary());
                 System.out.println("Age: " + employee.getAge());
             }
-
-
         }
     }
 }
