@@ -1,4 +1,10 @@
 package lesson_02;
+/**
+ * AIT-TR, cohort 42.1, Java Basic, lesson #02 ext
+ *
+ * @author Larysa Petrova
+ * @version 8-Feb-24
+ */
 
 
 public class CamelCase {
