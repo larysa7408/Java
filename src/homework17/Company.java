@@ -12,16 +12,16 @@ public class Company {
         employees[6] = new Employee("Dmitriy", "Director", "dmitriy@exzample.com", "+4905325653890", 4000, 45);
 
         for (Employee employee : employees) {
-            if (employee.getAge() > 40)
+            if (employee.getAge() > 40) {
                 System.out.println("Employee over 40: ");
-
-            System.out.println("Employee");
-            System.out.println("Name: " + employee.getName());
-            System.out.println("Position: " + employee.getPosition());
-            System.out.println("Email: " + employee.getEmail());
-            System.out.println("Phone: " + employee.getPhone());
-            System.out.println("Salary: " + employee.getSalary());
-            System.out.println("Age: " + employee.getAge());
+                System.out.println("Employee");
+                System.out.println("Name: " + employee.getName());
+                System.out.println("Position: " + employee.getPosition());
+                System.out.println("Email: " + employee.getEmail());
+                System.out.println("Phone: " + employee.getPhone());
+                System.out.println("Salary: " + employee.getSalary());
+                System.out.println("Age: " + employee.getAge());
+            }
 
 
         }
