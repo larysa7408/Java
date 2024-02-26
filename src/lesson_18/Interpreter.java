@@ -63,7 +63,11 @@ public class Interpreter {
             System.out.println("Error: variable name is empty");
             return false;
         }
-        // TODO check if variable name in 'a'..'z'
+        char firstChar = varName.charAt(0); // check if variable name in 'a'..'z'
+        if (!(firstChar >= 'a' && firstChar <= 'z')) {
+            System.out.println("Error: variable name is invalid ");
+            return false;
+        }
         return true;
     }
 }
