@@ -24,11 +24,13 @@ public class Transport {
         this.color = color;
         this.model = model;
     }
-    public void move(){
-        System.out.println(model+ " Moves");
+
+    public void move() {
+        System.out.println(model + " Moves");
     }
-    public void spot(){
-        System.out.println(model+ " Stops");
+
+    public void spot() {
+        System.out.println(model + " Stops");
     }
 
     @Override

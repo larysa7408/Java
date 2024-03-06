@@ -1,4 +1,5 @@
 package homework_22.homework22;
+
 /**
  * AIT-TR, cohort 42.1, Java Basic, HW #18
  *

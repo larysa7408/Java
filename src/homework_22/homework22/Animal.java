@@ -6,10 +6,12 @@ public class Animal {
     public Animal(String name) {
         this.name = name;
     }
-    public void eat(){
+
+    public void eat() {
         System.out.println(name + " is eating");
     }
-    public void sleep(){
+
+    public void sleep() {
         System.out.println(name + " is sleeping");
     }
 }
