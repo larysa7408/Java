@@ -1,4 +1,4 @@
-package homework17;
+package homework_17.homework17;
 
 public class Company {
     public static void main(String[] args) {

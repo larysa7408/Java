@@ -1,4 +1,4 @@
-package homework18;
+package homework_18.homework18;
 /**
  * AIT-TR, cohort 42.1, Java Basic, HW #18
  *

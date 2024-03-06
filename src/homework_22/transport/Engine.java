@@ -15,10 +15,7 @@ public class Engine {
         this.id=idCounter++;
     }
 public void start(){
-        //
-    //
     if(!isActive){
-
     }
 }
 }
