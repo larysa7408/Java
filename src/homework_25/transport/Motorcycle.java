@@ -8,7 +8,7 @@ public class Motorcycle extends Vehicle{
 
     @Override
     public String toString() {
-        return "Motorcycle{id: \" + getId() + \"; engine: \" + getEngine() + \"}\"}";
+        return "Motorcycle{id: " + getId() + "; engine: " + getEngine() + " }";
     }
 
     @Override
