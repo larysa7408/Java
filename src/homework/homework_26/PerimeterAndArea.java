@@ -6,8 +6,6 @@ package homework.homework_26;
  * @author Larysa Petrova
  * @version 14-MAR-24
  */
-
-
 public class PerimeterAndArea {
 
     public static void main(String[] args) {
