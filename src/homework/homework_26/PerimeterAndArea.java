@@ -13,7 +13,7 @@ public class PerimeterAndArea {
         Figure[] figures = new Figure[3];
         figures[0] = new Circle(5);
         figures[1] = new Rectangle(2, 4);
-        figures[2] = new Triangle(3, 6, 7);
+        figures[2] = new Triangle(3, 4, 5);
 
         double totalArea = 0;
         double totalPerimeter = 0;
@@ -23,6 +23,6 @@ public class PerimeterAndArea {
             totalPerimeter += figure.calculatePerimeter();
         }
         System.out.println("Total area of all figures " + totalArea);
-        System.out.println("Total Perimeter of all figures" + totalPerimeter);
+        System.out.println("Total Perimeter of all figures " + totalPerimeter);
     }
 }
