@@ -9,6 +9,7 @@ package homework.homework_26;
 
 
 public class PerimeterAndArea {
+
     public static void main(String[] args) {
         Figure[] figures = new Figure[3];
         figures[0] = new Circle(5);

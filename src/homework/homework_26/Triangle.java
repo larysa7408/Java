@@ -1,6 +1,7 @@
 package homework.homework_26;
 
 public class Triangle extends Figure{
+
     private double side1;
     private double side2;
     private double side3;

@@ -10,6 +10,7 @@ package homework.homework_26;
  */
 
 public abstract class Figure {
+    
     abstract double calculateArea();
     abstract double calculatePerimeter();
 }

@@ -1,6 +1,7 @@
 package homework.homework_26;
 
 public class Rectangle extends Figure {
+
     private double width;
     private double height;
 
