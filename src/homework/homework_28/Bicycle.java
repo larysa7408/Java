@@ -1,4 +1,4 @@
-package homework_28;
+package homework.homework_28;
 
 public class Bicycle {
     private String model;
