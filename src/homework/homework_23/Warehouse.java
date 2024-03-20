@@ -11,8 +11,10 @@ public class Warehouse {
     }
 
     public void addAll(List<ProductAndCount> products) {
+        
         //TODO analize and find some problem
         this.products.addAll(products);
+
     }
 
     public void deleteAll(List<ProductAndCount> products) {
