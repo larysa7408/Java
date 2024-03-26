@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SimpleStack {
     static int[] stack = new int[10];
-    static int idx = 0;
+    public static int idx = 0;
 
     public static void push(int value) {
         if (idx < stack.length) {
