@@ -57,9 +57,5 @@ public class RubberArray {
             }
         }
         return str + "]";
-
-
-
-
     }
 }

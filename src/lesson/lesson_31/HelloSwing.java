@@ -17,6 +17,9 @@ public class HelloSwing extends JFrame {
 
     final Color[] COLORS = {Color.green, Color.blue, Color.red, Color.CYAN, Color.MAGENTA};
     private int CIRCLE_COUNT = 100;
+    private enum ShapeForm {CIRCLES, RESTANGLES, TRIANGLES};
+
+
 
     public static void main(String[] args) {
         new HelloSwing(); // создаём объект-окно
