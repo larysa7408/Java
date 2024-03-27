@@ -4,7 +4,7 @@ package homework;
  *
  * @author Larysa Petrova
  * @version 27-Mart-24
- */
+ **/
 
 import javax.swing.*;
 import java.awt.*;
