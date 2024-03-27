@@ -7,7 +7,11 @@ package homework.homework_31;
  **/
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.GridLayout;
+import java.awt.Panel;
 import java.util.Random;
 
 public class RectangleSwing extends JFrame {
