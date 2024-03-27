@@ -1,4 +1,4 @@
-package homework;
+package homework.homework_31;
 /**
  * AIT-TR, cohort 42.1, Java Basic, HW #31
  *
@@ -8,8 +8,6 @@ package homework;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Random;
 
 public class RectangleSwing extends JFrame {
