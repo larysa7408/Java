@@ -51,12 +51,12 @@ public class HelloSwing extends JFrame {
         btnExit.addActionListener(e -> System.exit(0));
 
         Panel btnPanel = new Panel();
-        btnPanel.setLayout(new GridLayout());
-        btnPanel.add(btnDraw);
+        btnPanel.setLayout(new GridLayout());//создаем кнопочную панель
+        btnPanel.add(btnDraw);// добавляем кнопки
         btnPanel.add(btnExit);
 
-        add(btnPanel, BorderLayout.SOUTH);
-        add(canvas, BorderLayout.CENTER);
+        add(btnPanel, BorderLayout.SOUTH);// добавление кнопки справа
+        add(canvas, BorderLayout.CENTER);// добавление кнопки слева
 
 //        add(btnDraw, BorderLayout.NORTH);
 //        add(btnExit, BorderLayout.SOUTH);
