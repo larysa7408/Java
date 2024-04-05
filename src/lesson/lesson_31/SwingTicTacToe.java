@@ -56,16 +56,29 @@ public class SwingTicTacToe extends JFrame {
     private class Canvas extends JPanel {
         public void paint(Graphics g) {
             super.paint(g);
+            int width = getWidth();
+            int heigh = getHeight();
+            int cellWidth = width / 3;
+            int cellHeight = heigh / 3;
+
             g.setColor(Color.gray);
-            g.drawLine(0, 1, getWidth(), 0);
+            g.drawLine(0, 1, width, 1);
             for (int i = 0; i < 2; i++) {
-                g.drawLine(0, getHeight() / 3 * (i + 1), getWidth(), getHeight() / 3 * (i + 1));
-                g.drawLine(getWidth() / 3 * (i + 1), 1, getWidth() / 3 * (i + 1), getHeight());
+                g.drawLine(0, cellHeight * (i + 1), width, cellHeight * (i + 1));
+                g.drawLine(cellWidth * (i + 1), 1, cellWidth * (i + 1), heigh);
             }
             for (int x = 0; x < 3; x++) {
                 for (int y = 0; y < 3; y++) {
                     if (table[x][y] == 'x') {
+                        g.setColor(Color.blue);
+                        g.drawLine(cellWidth * x, cellHeight * y, cellWidth * (x + 1), cellHeight * (y + 1));
+                        g.drawLine(cellWidth * (x + 1), cellHeight * y, cellWidth * x, cellHeight * (y + 1));
                         // TODO нарисовать крестик
+                    }
+                    if (table[x][y] == '0') {
+                        g.setColor(Color.red);
+                        g.drawOval(cellWidth * x, cellHeight * y, cellWidth, cellHeight);
+
                     }
                 }
             }

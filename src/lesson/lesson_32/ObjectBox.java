@@ -1,4 +1,4 @@
-package lesson_32;
+package lesson.lesson_32;
 
 public class ObjectBox {
     private Object obj;

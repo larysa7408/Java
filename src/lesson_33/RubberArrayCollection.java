@@ -1,12 +1,14 @@
-package lesson_32;
+package lesson_33;
 
-public class RubberArrayGenerics<E> {
+import java.util.Iterator;
+
+public class RubberArrayCollection<E> implements Iterable<E> {
     private final int INIT_DATA_SIZE = 3;
     private final float EXTEND_INDEX = 1.5f;
     private Object[] data;
     private int length;
 
-    public RubberArrayGenerics() {
+    public RubberArrayCollection() {
         this.data = new Object[INIT_DATA_SIZE];
         length = 0;
     }
@@ -72,6 +74,26 @@ public class RubberArrayGenerics<E> {
         return -1;
     }
 
+
+    @Override
+    public Iterator<E> iterator() {
+        return new Itr();
+    }
+
+    private class Itr implements Iterator<E> {
+        private int cursor = 0;
+
+        @Override
+        public boolean hasNext() {
+            return length > cursor;
+        }
+
+        @Override
+        public E next() {
+            return (E) data[cursor++];
+        }
+    }
+
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder("[");
@@ -85,4 +107,3 @@ public class RubberArrayGenerics<E> {
         return str.toString();
     }
 }
-

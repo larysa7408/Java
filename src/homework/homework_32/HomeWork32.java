@@ -1,4 +1,4 @@
-package homework_32;
+package homework.homework_32;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import java.util.List;
  * AIT-TR, cohort 42.1, Java Basic, HW #32
  *
  * @author Larysa Petrova
- * @version 26-Apr-24
+ * @version 26-Apr-2
  */
 //Задача 1. Написать метод, который меняет два элемента массива местами
 // (массив может сохранять элементы любого ссылочного типа)

@@ -1,4 +1,4 @@
-package lesson_32;
+package lesson.lesson_32;
 
 public class GenericBox <T> {
     private T obj;
