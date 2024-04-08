@@ -1,5 +1,6 @@
 package homework.homework_17.homework17;
 
+
 public class Company {
     public static void main(String[] args) {
         Employee[] employees = new Employee[7];

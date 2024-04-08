@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TicTacToe {
     public static char[][] table = new char[3][3];
-    public static Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
     static Random random = new Random();
     static final char CHAR_EMPTY = '-';
     static final char CHAR_X = 'x';
@@ -55,7 +55,7 @@ public class TicTacToe {
         }
     }
 
-   public static void printTable() {
+    public static void printTable() {
         for (int y = 0; y < 3; y++) {
             for (int x = 0; x < 3; x++) {
                 System.out.print(table[y][x] + " ");

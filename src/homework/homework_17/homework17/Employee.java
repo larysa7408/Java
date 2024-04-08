@@ -1,11 +1,11 @@
 package homework.homework_17.homework17;
 
-/**
- * AIT-TR, cohort 42.1, Java Basic, HW #17 ext
- *
- * @author Larysa Petrova
- * @version 23-Feb-24
- */
+///**
+// * AIT-TR, cohort 42.1, Java Basic, HW #17 ext
+// *
+// * @author Larysa Petrova
+// * @version 23-Feb-24
+// */
 /*
 Задача 1.
 Создать класс Employee(сотрудник) с полями:
