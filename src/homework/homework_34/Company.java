@@ -31,14 +31,14 @@ public class Company {
         Comparator<Employee> nameComparatorAsc = Comparator.comparing(Employee::getName);
         Collections.sort(employees, nameComparatorAsc);
 
-        Comparator<Employee> nameComparaterDesc = Comparator.comparing(Employee::getName).reversed();
-        Collections.sort(employees, nameComparaterDesc);
+        Comparator<Employee> nameComparatorDesc = Comparator.comparing(Employee::getName).reversed();
+        Collections.sort(employees, nameComparatorDesc);
 
-        Comparator<Employee> ageComporatorAsc = Comparator.comparing(Employee::getAge);
-        Collections.sort(employees, ageComporatorAsc);
+        Comparator<Employee> ageComparatorAsc = Comparator.comparing(Employee::getAge);
+        Collections.sort(employees, ageComparatorAsc);
 
-        Comparator<Employee> ageComparaterDesk = Comparator.comparing(Employee::getAge).reversed();
-        Collections.sort(employees, ageComparaterDesk);
+        Comparator<Employee> ageComparatorDesk = Comparator.comparing(Employee::getAge).reversed();
+        Collections.sort(employees, ageComparatorDesk);
 
         System.out.println("Sorted Employees");
         employees.forEach(System.out::println);
