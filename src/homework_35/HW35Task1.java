@@ -3,10 +3,10 @@ package homework_35;
 import java.util.*;
 
 /**
- * AIT-TR, cohort 42.1, Java Basic, HW #34
+ * AIT-TR, cohort 42.1, Java Basic, HW #35
  *
  * @author Larysa Petrova
- * @version 7-Apr-24
+ * @version 10-Apr-24
  */
 
 public class HW35Task1 {
