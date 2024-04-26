@@ -1,4 +1,4 @@
-package lesson_42;
+package lesson.lesson_42;
 
 public class LibraryBook {
     private String author;
@@ -53,6 +53,9 @@ public class LibraryBook {
         this.isInLibrary = false;
         this.borrowedTo = borrowedTo;
     }
+    public Object getPublisher() {
+        return publisher;
+    }
 
     @Override
     public String toString() {
@@ -65,4 +68,6 @@ public class LibraryBook {
                 ", isInLibrary=" + this.isInLibrary +
                 '}';
     }
+
+
 }

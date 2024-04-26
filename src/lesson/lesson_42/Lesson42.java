@@ -1,8 +1,9 @@
-package lesson_42;
+package lesson.lesson_42;
 
-import javax.swing.text.html.HTMLDocument;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Lesson42 {
     public static void main(String[] args) {
@@ -33,6 +34,18 @@ public class Lesson42 {
                 .filter(book -> book.getGenre().equals("Poetry"))// лямбда выражения
                 .count();
         System.out.println(count);
+
+        List<LibraryBook> list = books.stream()
+                .filter(book -> book.getAuthor().equals("Ivan Franko"))// лямбда выражения
+                .collect(Collectors.toList());
+        list.forEach(System.out::println);
+
+        List<String> list1 = books.stream()
+                .filter(book -> book.getAuthor().equals("Ivan Franko"))
+                .map(b ->b.getBookTitle())
+                .collect(Collectors.toList());
+
+        list.forEach(System.out::println);
     }
 }
 
