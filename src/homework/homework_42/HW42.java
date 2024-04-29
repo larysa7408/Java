@@ -1,4 +1,10 @@
 package homework.homework_42;
+/**
+ * AIT-TR, cohort 42.1, Java Basic, HW #18
+ *
+ * @author Larysa Petrova
+ * @version 26-Apr-24
+ */
 
 import lesson.lesson_42.LibraryBook;
 import lesson.lesson_42.LibraryBookRepository;
