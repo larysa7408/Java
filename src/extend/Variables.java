@@ -35,18 +35,21 @@ public class Variables {
 
     private boolean validateVarName(String varName) {
         // check variable name length
-        if (varName.length() > 1) {
-            System.out.println("Error: variable name is too long");
-            return false;
-        }
-        if (varName.isEmpty()) {
+        if (varName.length() == 0) {
             System.out.println("Error: variable name is empty");
             return false;
         }
-        // check if variable name is in 'a'..'z'
-        if (varName.charAt(0) < 'a' || varName.charAt(0) > 'z') {
+        char firstChar =varName.charAt(0);
+        if (!(Character.isLetter(firstChar))){
             System.out.println("Error: variable name is invalid");
             return false;
+        }
+        for (int i=1;i<varName.length();i++){
+            char currentChar=varName.charAt(i);
+            if (Character.isLetterOrDigit(currentChar)||currentChar=='_'){
+                System.out.println("Eror: variable name contains invalid characters");
+                return false;
+            }
         }
         return true;
     }
